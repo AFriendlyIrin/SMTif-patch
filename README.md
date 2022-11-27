@@ -15,7 +15,17 @@ To use, apply the IPS patch to a Shin Megami Tensei if... ROM. (For legal reason
 Patch with Lunar IPS: https://www.romhacking.net/utilities/240/
 
 ## Example Images
+![Kobold](/images/smtif_Kobold.png)
 
+Here we see that even demons with resistances to "Nothing" do in fact have some interesting interactions with instant death spells.
+
+![Erthys](/images/smtif_Erthys.png)
+
+The default description for this type is "Reflects Exorcism and Curse," nothing about the magic resistances.
+
+![Menu](/images/smtif_menu.png)
+
+Here is the menu with the added button prompts.
 
 ## Known Issues
 I am missing data for type codes 09, 0C, 20, 2E, 30, and 32. Demons with these types will only print their type code into the first slot and leave the rest blank. 0C and 30 are exclusive to Isora and Black Ooze, respectively, but the SMT wiki doesn't have resistance information for them, so I'm in the dark unless I manually test them. The other four I cannot find anywhere even after scouring the entire demon database in the ROM.
