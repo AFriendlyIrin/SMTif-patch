@@ -1,0 +1,400 @@
+//GAME NAME:		Shin Megami Tensei if... (SFC)
+
+#VAR(data, TABLE)
+#ADDTBL("../games/smtif/smtif.tbl", data)
+#SMA("LOROM00")
+#HDR($00)
+
+#ACTIVETBL(data)
+#JMP($208F6D,$2095EF)
+
+//BLOCK #000 NAME:		Types
+
+//POINTER #0 @ $208EDF - STRING #0 @ $208F6D
+
+#W16($208EDF)
+Nothing[END]
+
+//POINTER #1 @ $208EE1 - STRING #1 @ $208F76
+
+#W16($208EE1)
+Strong vs Fire[END]
+
+//POINTER #2 @ $208EE3 - STRING #2 @ $208F86
+
+#W16($208EE3)
+Strong vs Ice[END]
+
+//POINTER #3 @ $208EE5 - STRING #3 @ $208F95
+
+#W16($208EE5)
+Strong vs Electricity[END]
+
+//POINTER #4 @ $208EE7 - STRING #4 @ $208FAC
+
+#W16($208EE7)
+Strong vs Force[END]
+
+//POINTER #5 @ $208EE9 - STRING #5 @ $208FBD
+
+#W16($208EE9)
+Somewhat strong vs[LINE]
+Mind and Curse[END]
+
+//POINTER #6 @ $208EEB - STRING #6 @ $208FE0
+
+#W16($208EEB)
+Somewhat strong vs[LINE]
+Phys[END]
+
+//POINTER #7 @ $208EED - STRING #7 @ $208FF9
+
+#W16($208EED)
+Somewhat strong vs[LINE]
+Phys and Elec[END]
+
+//POINTER #8 @ $208EEF - STRING #8 @ $20901B
+
+#W16($208EEF)
+Somewhat strong vs[LINE]
+Fire and Ice[END]
+
+//POINTER #9 @ $208EF1 - STRING #9 @ $20903C
+
+#W16($208EF1)
+Reflects Mind[END]
+
+//POINTER #10 @ $208EF3 - STRING #10 @ $20904B
+
+#W16($208EF3)
+Reflects Phys[END]
+
+//POINTER #11 @ $208EF5 - STRING #11 @ $20905A
+
+#W16($208EF5)
+Absorbs Fire[LINE]
+Weak vs Ice[END]
+
+//POINTER #12 @ $208EF7 - STRING #12 @ $209074
+
+#W16($208EF7)
+Absorbs Electricity[END]
+
+//POINTER #13 @ $208EF9 - STRING #13 @ $209089
+
+#W16($208EF9)
+Reflects Fire and[LINE]
+Ice[END]
+
+//POINTER #14 @ $208EFB - STRING #14 @ $2090A0
+
+#W16($208EFB)
+Reflects Curse and[LINE]
+Light[END]
+
+//POINTER #15 @ $208EFD - STRING #15 @ $2090BA
+
+#W16($208EFD)
+Somewhat strong vs[LINE]
+All[END]
+
+//POINTER #16 @ $208EFF - STRING #16 @ $2090D2
+
+#W16($208EFF)
+Strong vs all physical[LINE]
+attacks except Guns[END]
+
+//POINTER #17 @ $208F01 - STRING #17 @ $2090FE
+
+#W16($208F01)
+Weak vs Fire and Ice[END]
+
+//POINTER #18 @ $208F03 - STRING #18 @ $209114
+
+#W16($208F03)
+Absorbs Electricity[LINE]
+Reflects Force[END]
+
+//POINTER #19 @ $208F05 - STRING #19 @ $209138
+
+#W16($208F05)
+Strong vs Fire, Ice,[LINE]
+Electricity[END]
+
+//POINTER #20 @ $208F07 - STRING #20 @ $20915A
+
+#W16($208F07)
+Weak vs Light and[LINE]
+Fire[END]
+
+//POINTER #21 @ $208F09 - STRING #21 @ $209172
+
+#W16($208F09)
+Immune to Guns[LINE]
+Weak vs Light[END]
+
+//POINTER #22 @ $208F0B - STRING #22 @ $209190
+
+#W16($208F0B)
+Only hurt by Swords,[LINE]
+Fire, and Force[END]
+
+//POINTER #23 @ $208F0D - STRING #23 @ $2091B6
+
+#W16($208F0D)
+Strong vs Phys[END]
+
+//POINTER #24 @ $208F0F - STRING #24 @ $2091C6
+
+#W16($208F0F)
+Absorbs Fire,[LINE]
+Weak vs Ice[END]
+
+//POINTER #25 @ $208F11 - STRING #25 @ $2091E1
+
+#W16($208F11)
+Reflects Fire[LINE]
+Weak vs Ice[END]
+
+//POINTER #26 @ $208F13 - STRING #26 @ $2091FC
+
+#W16($208F13)
+Absorbs Fire[LINE]
+Weak vs Ice[END]
+
+//POINTER #27 @ $208F15 - STRING #27 @ $209216
+
+#W16($208F15)
+Reflects Ice[LINE]
+Weak vs Fire[END]
+
+//POINTER #28 @ $208F17 - STRING #28 @ $209231
+
+#W16($208F17)
+Reflects Electricity[LINE]
+Weak vs Ice[END]
+
+//POINTER #29 @ $208F19 - STRING #29 @ $209253
+
+#W16($208F19)
+Somewhat strong vs[LINE]
+Magic, weak vs Curse[END]
+
+//POINTER #30 @ $208F1B - STRING #30 @ $20927C
+
+#W16($208F1B)
+Strong vs all magic[LINE]
+but Fire and Light[END]
+
+//POINTER #31 @ $208F1D - STRING #31 @ $2092A4
+
+#W16($208F1D)
+Immune vs Sword[LINE]
+Weak vs Curse[END]
+
+//POINTER #32 @ $208F1F - STRING #32 @ $2092C3
+
+#W16($208F1F)
+Weak vs Electricity[END]
+
+//POINTER #33 @ $208F21 - STRING #33 @ $2092D8
+
+#W16($208F21)
+Absorbs Electricity[END]
+
+//POINTER #34 @ $208F23 - STRING #34 @ $2092ED
+
+#W16($208F23)
+Strong vs Magic[END]
+
+//POINTER #35 @ $208F25 - STRING #35 @ $2092FE
+
+#W16($208F25)
+Absorbs Magic[END]
+
+//POINTER #36 @ $208F27 - STRING #36 @ $20930D
+
+#W16($208F27)
+Reflects Special[END]
+
+//POINTER #37 @ $208F29 - STRING #37 @ $20931F
+
+#W16($208F29)
+Strong vs demons,[LINE]
+reflects Light[END]
+
+//POINTER #38 @ $208F2B - STRING #38 @ $209341
+
+#W16($208F2B)
+Reflects Magic[END]
+
+//POINTER #39 @ $208F2D - STRING #39 @ $209351
+
+#W16($208F2D)
+Immune vs Curse[END]
+
+//POINTER #40 @ $208F2F - STRING #40 @ $209362
+
+#W16($208F2F)
+Almost immune vs[LINE]
+Phys[END]
+
+//POINTER #41 @ $208F31 - STRING #41 @ $209379
+
+#W16($208F31)
+Weak vs attack magic[END]
+
+//POINTER #42 @ $208F33 - STRING #42 @ $20938F
+
+#W16($208F33)
+Absorbs Ice[LINE]
+Weak vs Fire[END]
+
+//POINTER #43 @ $208F35 - STRING #43 @ $2093A9
+
+#W16($208F35)
+Absorbs Fire,[LINE]
+Strong vs Ailments[END]
+
+//POINTER #44 @ $208F37 - STRING #44 @ $2093CB
+
+#W16($208F37)
+Reflects Curse[LINE]
+Strong vs Ailments[END]
+
+//POINTER #45 @ $208F39 - STRING #45 @ $2093EE
+
+#W16($208F39)
+[END]
+
+//POINTER #46 @ $208F3B - STRING #46 @ $209408
+
+#W16($208F3B)
+Strong vs Mind[LINE]
+Reflects Fire[END]
+
+//POINTER #47 @ $208F3D - STRING #47 @ $209426
+
+#W16($208F3D)
+Reflects Ice and[LINE]
+Curse[END]
+
+//POINTER #48 @ $208F3F - STRING #48 @ $20943E
+
+#W16($208F3F)
+Immune vs everything[LINE]
+but Ice[END]
+
+//POINTER #49 @ $208F41 - STRING #49 @ $20945C
+
+#W16($208F41)
+Weak vs Guns, Fire[LINE]
+Reflects Ice[END]
+
+//POINTER #50 @ $208F43 - STRING #50 @ $20947D
+
+#W16($208F43)
+Reflects Temperature,[LINE]
+Force, and Curse[END]
+
+//POINTER #51 @ $208F45 - STRING #51 @ $2094A5
+
+#W16($208F45)
+Reflects Sword[END]
+
+//POINTER #52 @ $208F47 - STRING #52 @ $2094B5
+
+#W16($208F47)
+Reflects Gun[END]
+
+//POINTER #53 @ $208F49 - STRING #53 @ $2094C3
+
+#W16($208F49)
+Reflects Force[LINE]
+and Fire[END]
+
+//POINTER #54 @ $208F4B - STRING #54 @ $2094DC
+
+#W16($208F4B)
+Affected by Sword,[LINE]
+Fire, and Force[END]
+
+//POINTER #55 @ $208F4D - STRING #55 @ $209500
+
+#W16($208F4D)
+Cannot Analyze[END]
+
+//POINTER #56 @ $208F4F - STRING #56 @ $209510
+
+#W16($208F4F)
+Cannot Analyze[END]
+
+//POINTER #57 @ $208F51 - STRING #57 @ $209520
+
+#W16($208F51)
+Cannot Analyze[END]
+
+//POINTER #58 @ $208F53 - STRING #58 @ $209530
+
+#W16($208F53)
+Cannot Analyze[END]
+
+//POINTER #59 @ $208F55 - STRING #59 @ $209540
+
+#W16($208F55)
+Cannot Analyze[END]
+
+//POINTER #60 @ $208F57 - STRING #60 @ $209550
+
+#W16($208F57)
+Cannot Analyze[END]
+
+//POINTER #61 @ $208F59 - STRING #61 @ $209560
+
+#W16($208F59)
+Cannot Analyze[END]
+
+//POINTER #62 @ $208F5B - STRING #62 @ $209570
+
+#W16($208F5B)
+Cannot Analyze[END]
+
+//POINTER #63 @ $208F5D - STRING #63 @ $209580
+
+#W16($208F5D)
+Cannot Analyze[END]
+
+//POINTER #64 @ $208F5F - STRING #64 @ $209590
+
+#W16($208F5F)
+Cannot Analyze[END]
+
+//POINTER #65 @ $208F61 - STRING #65 @ $2095A0
+
+#W16($208F61)
+Cannot Analyze[END]
+
+//POINTER #66 @ $208F63 - STRING #66 @ $2095B0
+
+#W16($208F63)
+Cannot Analyze[END]
+
+//POINTER #67 @ $208F65 - STRING #67 @ $2095C0
+
+#W16($208F65)
+Cannot Analyze[END]
+
+//POINTER #68 @ $208F67 - STRING #68 @ $2095D0
+
+#W16($208F67)
+Cannot Analyze[END]
+
+//POINTER #69 @ $208F69 - STRING #69 @ $2095E0
+
+#W16($208F69)
+Cannot Analyze[END]
+
+//POINTER #70 @ $208F6B - STRING #70 @ $2095F0
+
+#W16($208F6B)
+<$F0><$99><$FA><$99>9<$9A>R<$9A>h<$9A>.<$9A><$56><$9A><$62><$9A><$72><$9A><$86><$9A>.<$9A><$AA><$9A><$C0><$9A><$CA><$9A><$DA><$9A><$EC><$9A><$FA><$9A>D<$9B>Y<$9B>i<$9B>w<$9B><$4D><$9B><$5B><$9B><$6D><$9B><$82><$9B><$92><$9B><$A6><$9B><$BC><$9B><$CE><$9B><$E2><$9B><$F4><$9B>5<$9C>V<$9C>p<$9C>.<$9C><$50><$9C><$60><$9C><$6C><$9C><$7C><$9C><$8C><$9C><$9E><$9C><$B0><$9C><$C2><$9C><$D2><$9C><$E4><$9C><$F8><$9C>B<$9D>V<$9D>p<$9D>><$9D><$5D><$9D><$72><$9D><$7C><$9D><$8E><$9D><$A2><$9D><$B0><$9D><$C4><$9D><$DA><$9D><$E8><$9D><$FD><$9D>E<$9E>Y<$9E>q<$9E>'<$9E><$55><$9E><$6B><$9E><$81><$9E><$91><$9E><$A3><$9E><$B3><$9E><$C7><$9E><$D9><$9E><$EB><$9E>0<$9F>L<$9F>h<$9F>..<$9F><$5A><$9F><$71><$9F><$8B><$9F><$9D><$9F><$B4><$9F><$CB><$9F><$E4><$9F><$FB><$9F>F<$A0>i<$A0>w<$A0><$55><$A0><$6B><$A0><$81><$A0>.<$A0><$AC><$A0><$C3><$A0><$D9><$A0><$F1><$A0>7<$A1>T<$A1>o<$A1> <$A1><$68><$A1><$7E><$A1>.<$A1><$AD><$A1><$C4><$A1><$D0><$A1><$E7><$A1><$00><$A2>N<$A2>j<$A2>v<$A2> <$A2><$6A><$A2><$83><$A2><$9E><$A2><$B3><$A2><$C9><$A2><$E0><$A2><$F5><$A2>A<$A3>M<$A3>e<$A3>s<$A3>"<$A3><$55><$A3><$6C><$A3><$82><$A3><$98><$A3><$AF><$A3><$C4><$A3><$DE><$A3><$F5><$A3>4<$A4>S<$A4>s<$A4><$50><$A4><$66><$A4><$7C><$A4><$93><$A4><$AB><$A4><$C2><$A4><$D9><$A4><$ED><$A4>2<$A5>N<$A5>k<$A5>"<$A5><$5E><$A5><$77><$A5><$8D><$A5><$AC><$A5><$CB><$A5><$DD><$A5><$E9><$A5><$F5><$A5>C<$A6>c<$A6>?<$A6><$50><$A6><$5A><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$F5><$99>1<$9A>I<$9A>Z<$9A>r<$9A><$4C><$9A><$5C><$9A><$6A><$9A><$7C><$9A><$8E><$9A><$A0><$9A><$B6><$9A><$C5><$9A><$D2><$9A><$E3><$9A><$F3><$9A>3<$9B>O<$9B>d<$9B>p<$9B>..<$9B><$54><$9B><$64><$9B><$78><$9B><$8A><$9B><$9C><$9B><$B2><$9B><$C5><$9B><$D8><$9B><$EB><$9B><$FD><$9B>I<$9C>f<$9C>v<$9C>"<$9C><$58><$9C><$66><$9C><$74><$9C><$84><$9C>:<$9C><$A7><$9C><$B9><$9C><$CA><$9C><$DB><$9C><$EE><$9C>1<$9D>L<$9D>f<$9D>y<$9D><$52><$9D><$68><$9D><$77><$9D><$85><$9D><$98><$9D><$A9><$9D><$BA><$9D><$D0><$9D><$E1><$9D><$F3><$9D>5<$9E>O<$9E>h<$9E>y<$9E><$4D><$9E><$61><$9E><$77><$9E><$89><$9E><$9A><$9E><$AB><$9E><$BD><$9E><$D0><$9E><$E2><$9E><$F7><$9E>B<$9F>X<$9F>v<$9F><$50><$9F><$67><$9F><$81><$9F><$94><$9F><$AA><$9F><$C0><$9F><$DA><$9F><$F1><$9F>6<$A0>Y<$A0>p<$A0><$4B><$A0><$61><$A0><$77><$A0><$8C><$A0><$A2><$A0><$B9><$A0><$CF><$A0><$E7><$A0><$FE><$A0>J<$A1>e<$A1>"<$A1><$5E><$A1><$74><$A1><$8A><$A1><$A3><$A1><$BA><$A1><$CA><$A1><$DD><$A1><$F6><$A1>D<$A2>Z<$A2>p<$A2>"<$A2><$60><$A2><$79><$A2><$94><$A2><$A9><$A2><$BF><$A2><$D6><$A2><$EB><$A2>0<$A3>G<$A3>V<$A3>l<$A3>,<$A3><$4E><$A3><$62><$A3><$78><$A3><$8E><$A3><$A5><$A3><$BA><$A3><$D4><$A3><$EB><$A3><$FD><$A3>H<$A4>i<$A4>><$A4><$5C><$A4><$72><$A4><$89><$A4><$A1><$A4><$B8><$A4><$CF><$A4><$E3><$A4><$F9><$A4>D<$A5>a<$A5>y<$A5><$54><$A5><$6D><$A5><$83><$A5><$A2><$A5><$C1><$A5><$D4><$A5><$E3><$A5><$EF><$A5>2<$A6>T<$A6>t<$A6>-<$A6><$55><$A6><$65><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6><$6F><$A6>Agi[END]
