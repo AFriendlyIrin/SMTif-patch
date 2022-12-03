@@ -28,6 +28,4 @@ The default description for this type is "Reflects Exorcism and Curse," nothing 
 Here is the menu with the added button prompts.
 
 ## Known Issues
-I am missing data for type codes 09, 0C, 20, 2E, 30, and 32. Demons with these types will only print their type code into the first slot and leave the rest blank. 0C and 30 are exclusive to Isora and Black Ooze, respectively, but the SMT wiki doesn't have resistance information for them, so I'm in the dark unless I manually test them. The other four I cannot find anywhere even after scouring the entire demon database in the ROM.
-
 The menu button prompts appear on the level up screen, even though they can't be used there. There's no easy way to fix this.
